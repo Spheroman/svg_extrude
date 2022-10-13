@@ -1,0 +1,1 @@
+FOR %%G IN (.\*.svg) DO python svg_extrude.py --stl --flip %%G

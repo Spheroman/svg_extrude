@@ -1,2 +1,6 @@
 rapidtables
 tinycss2
+
+start "C:\Program Files\Ultimaker Cura 5.0.0\Ultimaker-Cura.exe" "D:\temp.stl"
+timeout /t 5 /nobreak
+nircmd.exe savescreenshot D:\screen1.png

@@ -26,7 +26,7 @@ def render_file(base_name, output_format, scene, height, overlay_height, flip):
     # temporary file if no SCAD file is selected - we don't want to overwrite
     # anything in this case).
     for group in scene.groups:
-        file_name = f"{base_name}_{group.color.display_name()}.{output_format}"
+        file_name = f"STLs/{base_name}_{group.color.display_name()}.{output_format}"
         print(f"Rendering to {file_name}")
         # TOOD use identifier
         defines = {"selection": f'"{group.color.display_name()}"'}
@@ -116,3 +116,4 @@ parser.add_argument("svg_files", nargs='+', help="SVG file name")
 
 if __name__ == "__main__":
     svg_extrude(parser.parse_args())
+ 
